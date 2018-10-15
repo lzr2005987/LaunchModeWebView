@@ -27,6 +27,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btBaidu.setOnClickListener(this);
         btYoudao.setOnClickListener(this);
 
+        /**
+         * 在这里设置launchMode，目前支持singleTop、singleTask和standard，singleInstance对webView意义不大
+         */
         webView.setLunchMode(LunchModeWebView.Mode.SINGLE_TOP);
         webView.loadUrl(url[0]);
 
